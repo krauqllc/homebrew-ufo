@@ -4,7 +4,10 @@ Inspect files, extract content and make guarded edits locally with [Universal Fi
 
 Linux x86_64 with glibc 2.35 or later is required. Alpine/musl, macOS and ARM64 are unsupported by this release. The application includes Java; rendering and PDF conversion also need libGL, libX11 and fontconfig on your host.
 
+Homebrew 7 loads formulae from other taps only after you trust them:
+
 ```sh
+brew trust --formula krauqllc/ufo/ufo
 brew install krauqllc/ufo/ufo
 ufo --version
 ufo doctor

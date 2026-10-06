@@ -11,7 +11,7 @@ ufo doctor
 ufo inspect /absolute/path/to/file
 ```
 
-This formula pins CLI 1.5.1 to the published GitHub archive and its SHA-256. Homebrew downloads it during installation. Document processing runs locally without network or telemetry.
+This formula pins CLI 1.6.0 to the published GitHub archive and its SHA-256. Homebrew downloads it during installation. Document processing runs locally without network or telemetry.
 
 For MCP, run `ufo mcp print-config --client claude-code` and replace the allowed-root placeholders with existing absolute task directories. No directories are granted by default.
 
@@ -22,6 +22,6 @@ brew uninstall krauqllc/ufo/ufo
 brew untap krauqllc/ufo
 ```
 
-The formula and tap documentation are Apache-2.0 source. The downloaded application includes proprietary engines under separate business use terms; the executable as a whole is not Apache licensed. Read `ENGINE-LICENSE.txt` under `$(brew --prefix krauqllc/ufo/ufo)/libexec` before commercial use. This tap ships no application binaries. The [release](https://github.com/krauqllc/ufo-cli/releases/tag/v1.5.1) includes its notices and license terms.
+The formula and tap documentation are Apache-2.0 source. The downloaded application includes proprietary engines under separate business use terms; the executable as a whole is not Apache licensed. Read `ENGINE-LICENSE.txt` under `$(brew --prefix krauqllc/ufo/ufo)/libexec` before commercial use. This tap ships no application binaries. The [release](https://github.com/krauqllc/ufo-cli/releases/tag/v1.6.0) includes its notices and license terms.
 
 Linux installation, offline `ufo doctor`, `ufo capabilities` and `brew test` were verified with Homebrew 7.0.0 on Ubuntu 24.04. All 467 installed runtime files retained the approved release bytes and executable flags. The formula source is maintained in [ufo-cli](https://github.com/krauqllc/ufo-cli).
